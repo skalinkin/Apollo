@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "./build",
+    "sourceMap": true,
+    "lib": ["es6", "dom"],
+    "types": ["reflect-metadata", "node", "inversify"],
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "removeComments": true
+  }
+}

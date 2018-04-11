@@ -1,0 +1,16 @@
+{
+  "name": "avtec-apollo",
+  "version": "0.0.1",
+  "description": "Learning project for Avtec's developers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sergiy Kalinkin",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^9.4.7",
+    "inversify": "^4.11.1",
+    "reflect-metadata": "^0.1.12"
+  }
+}
