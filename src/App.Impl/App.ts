@@ -9,11 +9,15 @@ class App implements IApp {
   private _monitor: IStatusMonitor;
   private _server: any;
   private _config: IServerConfig;
-  
-  constructor(@inject('IStatusMonitor') monitor: IStatusMonitor
-            , @inject('IServerConfig') config: IServerConfig) {
+
+  constructor(@inject('IStatusMonitor') monitor: IStatusMonitor, @inject('IServerConfig') config: IServerConfig) {
     this._monitor = monitor;
-    this._server = http.createServer();
+    this._server = http.createServer((req, res) => {
+      res.writeHead(200, {
+        'Content-Type': 'text/plain'
+      });
+      res.end('Hello World\n');
+    });
     this._config = config;
   }
   start() {
