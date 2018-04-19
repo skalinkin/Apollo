@@ -20,6 +20,8 @@ import ServerRequestHandler from "../App.Impl/ServerRequestHandler";
 import AvtecFundamentals from "../Fundamental/AvtecFundamentals";
 import FundamentalsServerRequestHandler from "../Fundamental/FundamentalsServerRequestHandler";
 import AvtecFirstFundamental from "../Fundamental/AvtecFirstFundamental";
+import SecondSWfundamental from "../Fundamental/SecondSWfundamental";
+import ThirdSWfundamental from "../Fundamental/ThirdSWfundamental";
 
 let container = new Container();
 
@@ -32,5 +34,7 @@ container.bind<IServerRequestHandler>("IServerRequestHandler").to(FundamentalsSe
 //container.bind<IServerRequestHandler>("IServerRequestHandler").to(ServerRequestHandler);
 container.bind<IFundamentals>("IFundamentals").to(AvtecFundamentals);
 container.bind<Fundamental>("Fundamental").to(AvtecFirstFundamental);
+container.bind<Fundamental>("Fundamental").to(SecondSWfundamental);
+container.bind<Fundamental>("Fundamental").to(ThirdSWfundamental);
 
 export default container;

@@ -1,8 +1,4 @@
-import {
-  inject,
-  injectable,
-  named
-} from "inversify";
+import {  inject,  injectable,  named} from "inversify";
 import IServerRequestHandler from "../App/IServerRequestHandler";
 import IFundamentals from "../Fundamental/IFundamentals";
 
