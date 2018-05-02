@@ -22,6 +22,8 @@ import FundamentalsServerRequestHandler from "../Fundamental/FundamentalsServerR
 import AvtecFirstFundamental from "../Fundamental/AvtecFirstFundamental";
 import SecondSWfundamental from "../Fundamental/SecondSWfundamental";
 import ThirdSWfundamental from "../Fundamental/ThirdSWfundamental";
+import FourthSWfundamental from "../Fundamental/FourthSWfundamental";
+import FifthSWfundamental from "../Fundamental/FifthSWFundamental";
 
 let container = new Container();
 
@@ -36,5 +38,7 @@ container.bind<IFundamentals>("IFundamentals").to(AvtecFundamentals);
 container.bind<Fundamental>("Fundamental").to(AvtecFirstFundamental);
 container.bind<Fundamental>("Fundamental").to(SecondSWfundamental);
 container.bind<Fundamental>("Fundamental").to(ThirdSWfundamental);
+container.bind<Fundamental>("Fundamental").to(FourthSWfundamental);
+container.bind<Fundamental>("Fundamental").to(FifthSWfundamental);
 
 export default container;
